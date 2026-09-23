@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Figtree, "Helvetica Neue", Helvetica, sans-serif; background: #ffffff; color: #0b1220; -webkit-font-smoothing: antialiased; }
+  a { color: #1d4ed8; text-decoration: none; }
+  a:hover { color: #0b1220; }
+</style>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800;900&amp;family=Caveat:wght@500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+  .fdc-hero-inner { max-width: 1180px; margin: 0 auto; padding: 0 28px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: center; }
+  @media (min-width: 768px) { .fdc-hero-inner { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 40px; } }
+  .fdc-btn-kit { display: inline-flex; align-items: center; gap: 8px; background: #1d6ef5; color: #fff; font-size: 15px; font-weight: 700; padding: 14px 24px; border-radius: 10px; box-shadow: 0 8px 20px rgba(29,110,245,0.28); white-space: nowrap; }
+  .fdc-btn-kit:hover { background: #155cd6; color: #fff; }
+  .fdc-btn-course { display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(10,22,40,0.15); color: #0b1220; font-size: 15px; font-weight: 700; padding: 14px 24px; border-radius: 10px; background: #fff; }
+  .fdc-btn-course:hover { border-color: #1d6ef5; color: #0b1220; }
+  .fdc-proof-row { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; padding-top: 20px; border-top: 1px solid rgba(10,22,40,0.08); margin-top: 20px; }
+  .fdc-proof-left { display: flex; align-items: center; gap: 10px; }
+  .fdc-avatar { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 800; color: #fff; border: 2px solid #eaf2ff; margin-left: -6px; }
+  .fdc-proof-text p { font-size: 13px; font-weight: 700; margin: 0; color: #0b1220; }
+  .fdc-proof-text span { font-size: 11.5px; color: #7a89a3; }
+  .fdc-stars { display: flex; gap: 2px; color: #F59E0B; font-size: 14px; }
+  .fdc-proof-right { margin-left: auto; text-align: right; }
+  .fdc-proof-right .price-tag { font-size: 15px; font-weight: 800; color: #1d6ef5; }
+  .fdc-proof-right .sub { font-size: 11.5px; color: #7a89a3; }
+  .fdc-card { background: #fff; border: 1px solid #e6eaf2; border-radius: 16px; padding: 28px; }
+  .fdc-section-label { font-size: 11.5px; font-weight: 800; letter-spacing: 0.16em; color: #1552c7; }
+  .fdc-heading { font-size: 30px; font-weight: 900; letter-spacing: -0.03em; line-height: 1.15; margin: 10px 0 0; }
+  .fdc-body { font-size: 14.5px; line-height: 1.6; color: #4a5a75; margin-top: 14px; }
+  .fdc-check { color: #1d6ef5; font-weight: 700; }
+  .fdc-x { color: #ef4444; font-weight: 700; }
+</style>
+</helmet>
+
+<div style="width:100%;overflow-x:hidden">
+
+  <!-- HERO -->
+  <div style="position:relative;overflow:hidden;background:linear-gradient(180deg,#eaf2ff 0%,#e6effe 55%,#f4f8ff 100%);box-shadow:inset 0 -1px 0 #dfe8f6;padding-top:100px;padding-bottom:80px">
+    <div style="position:absolute;inset:0;pointer-events:none;overflow:hidden" aria-hidden="true">
+      <div style="position:absolute;left:50%;top:33%;transform:translate(-50%,-50%);width:70vw;height:70vw;max-width:900px;max-height:900px;border-radius:50%;background:radial-gradient(circle,#1d6ef5 0%,transparent 70%);opacity:0.10;filter:blur(60px)"></div>
+    </div>
+    <div style="position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 28px;display:flex;flex-direction:column">
+      <div class="fdc-hero-inner">
+        <!-- LEFT: text -->
+        <div>
+          <div style="display:inline-flex;align-items:center;gap:8px;border-radius:100px;padding:6px 14px;font-size:12px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;background:rgba(14,165,233,0.10);color:#1d6ef5;border:1px solid rgba(14,165,233,0.20);margin-bottom:20px">$5 BEGINNER ROADMAP</div>
+          <h1 style="font-family:Figtree,sans-serif;font-size:44px;font-weight:900;line-height:1.08;letter-spacing:-0.03em;color:#0b1220;margin:0">Make Your first <span style="color:#1d6ef5">$1</span> online.</h1>
+          <p style="margin:18px 0 0;font-size:16px;line-height:1.6;color:#4a5a75">A calm, practical path for people with no audience. Go from a blank page to a simple digital product and one honest first-sale attempt.</p>
+          <p style="margin:8px 0 0;font-size:14.5px;line-height:1.6;color:#7a89a3">Not a get-rich system. No income claims. Just the next useful step.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:28px">
+            <a href="#kit" class="fdc-btn-kit">Get the $5 Kit <span style="font-size:16px">→</span></a>
+            <a href="https://www.youtube.com/playlist?list=PLRcOv45N0DG8" target="_blank" rel="noopener" class="fdc-btn-course">Watch the free course</a>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:16px;font-size:12.5px;color:#7a89a3">
+            <span style="color:#FF0033;font-size:14px">▶</span>
+            <span>Free course on YouTube · 145K+ subscribers</span>
+          </div>
+          <!-- Inline social proof -->
+          <div class="fdc-proof-row">
+            <div class="fdc-proof-left">
+              <div class="fdc-avatar" style="margin-left:0;background:#1d6ef5">JM</div>
+              <div class="fdc-avatar" style="background:#6366F1">AK</div>
+              <div class="fdc-avatar" style="background:#8B5CF6">TR</div>
+              <div class="fdc-proof-text">
+                <p>1,200+ beginners</p>
+                <span>already got kit</span>
+              </div>
+            </div>
+            <div style="hidden;display:block">
+              <div class="fdc-stars">★★★★★</div>
+              <span style="font-size:12px;color:#7a89a3;margin-top:4px;display:block">&ldquo;Simple, clear actually actionable.&rdquo;</span>
+            </div>
+            <div class="fdc-proof-right">
+              <div class="price-tag">$5</div>
+              <div class="sub">one-time · no subscription</div>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT: image -->
+        <div style="position:relative">
+          <sc-if value="{{ heroWide }}" hint-placeholder-val="{{ true }}">
+            <div style="position:relative">
+              <div style="position:absolute;inset:-16px;border-radius:24px;opacity:0.12;filter:blur(24px);background:linear-gradient(135deg,#1d6ef5 0%,#B8DFFF 100%)" aria-hidden="true"></div>
+              <div style="position:relative;overflow:hidden;border-radius:16px;border:1px solid rgba(10,22,40,0.08);background:#fff;box-shadow:0 20px 50px rgba(10,22,40,0.10)">
+                <image-slot id="fdc-hero-3" shape="rect" radius="0" src="./assets/hero-3x2.png" placeholder="hero photo 3:2 (1536×1024)" style="width:100%;height:auto;display:block"></image-slot>
+              </div>
+              <div style="position:absolute;bottom:-12px;left:-12px;border-radius:12px;padding:12px;background:#fff;border:1px solid rgba(10,22,40,0.08);box-shadow:0 8px 32px rgba(10,22,40,0.10);display:flex;align-items:center;gap:10px">
+                <div style="width:28px;height:28px;border-radius:50%;background:#FF0033;display:flex;align-items:center;justify-content:center;flex:none">
+                  <div style="width:0;height:0;border-left:8px solid #fff;border-top:5px solid transparent;border-bottom:5px solid transparent;margin-left:2px"></div>
+                </div>
+                <div>
+                  <div style="font-size:12px;font-weight:700;color:#0b1220">Free YouTube Course</div>
+                  <div style="font-size:11px;color:#7a89a3">145K+ watching</div>
+                </div>
+              </div>
+              <div style="position:absolute;top:-12px;right:-12px;border-radius:12px;padding:0;overflow:hidden;background:#fff;border:1px solid rgba(10,22,40,0.08);box-shadow:0 8px 32px rgba(10,22,40,0.10);width:90px;display:none" class="fdc-float-product"></div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ heroNarrow }}" hint-placeholder-val="{{ false }}">
+            <div style="position:relative">
+              <div style="overflow:hidden;border-radius:16px;border:1px solid rgba(10,22,40,0.08);background:#fff;box-shadow:0 20px 50px rgba(10,22,40,0.10)">
+                <image-slot id="fdc-hero-narrow" shape="rect" radius="0" src="./assets/hero-3x2.png" placeholder="hero photo 3:2" style="width:100%;height:auto;display:block"></image-slot>
+              </div>
+            </div>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROBLEM / SOLUTION -->
+  <div style="padding:80px 28px;background:#EEF6FF">
+    <div style="max-width:1180px;margin:0 auto;display:grid;grid-template-columns:minmax(0,1fr);gap:14px">
+      <sc-if value="{{ showComparison }}" hint-placeholder-val="{{ true }}">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px">
+          <!-- LEFT: problem -->
+          <div style="background:#fff;border:1px solid #e6eaf2;border-radius:16px;padding:32px">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:18px">↻</span>
+              <div style="font-size:11.5px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#7a89a3">The usual loop</div>
+            </div>
+            <h2 style="margin:12px 0 0;font-size:28px;font-weight:900;letter-spacing:-0.025em;line-height:1.15;color:#0b1220">More saving. Nothing for sale.</h2>
+            <ul style="margin:22px 0 0;padding:0;list-style:none;display:grid;gap:12px">
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#fde8e7;color:#ef4444;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✕</span>Watch another video, then another.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#fde8e7;color:#ef4444;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✕</span>Buy a course you do not finish.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#fde8e7;color:#ef4444;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✕</span>Wait until it feels &ldquo;ready.&rdquo;</li>
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#fde8e7;color:#ef4444;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✕</span>Still no product. Still no attempt.</li>
+            </ul>
+          </div>
+          <!-- RIGHT: solution -->
+          <div style="background:#fff;border:1px solid rgba(14,165,233,0.35);border-radius:16px;padding:32px;position:relative;overflow:hidden">
+            <div style="display:flex;align-items:center;gap:8px">
+              <span style="font-size:18px">⚡</span>
+              <div style="font-size:11.5px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#1d6ef5">A clearer path</div>
+            </div>
+            <h2 style="margin:12px 0 0;font-size:28px;font-weight:900;letter-spacing:-0.025em;line-height:1.15;color:#0b1220">One product. One try.</h2>
+            <ul style="margin:22px 0 0;padding:0;list-style:none;display:grid;gap:12px">
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#e6efff;color:#1d6ef5;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✓</span>Pick one problem you can already help with.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#e6efff;color:#1d6ef5;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✓</span>Make a small digital product you can finish.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#e6efff;color:#1d6ef5;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✓</span>Put a real price on it.</li>
+              <li style="display:flex;gap:12px;align-items:flex-start;font-size:14px;line-height:1.5;color:#4a5a75"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#e6efff;color:#1d6ef5;font-size:10px;display:flex;align-items:center;justify-content:center;margin-top:1px">✓</span>Attempt a first sale, then learn from it.</li>
+            </ul>
+          </div>
+        </div>
+      </sc-if>
+    </div>
+  </div>
+
+  <!-- TESTIMONIAL -->
+  <div style="padding:64px 28px;background:#EEF6FF">
+    <div style="max-width:800px;margin:0 auto;text-align:center">
+      <blockquote style="font-family:Figtree,sans-serif;font-size:22px;line-height:1.5;font-weight:500;color:#0b1220;margin:0">&ldquo;This kit gave me direction and finally got me to take <strong>action. I made my first sale 12 days later.</strong>&rdquo;</blockquote>
+      <div style="display:flex;align-items:center;justify-content:center;gap:16px;margin-top:24px">
+        <div style="width:40px;height:40px;border-radius:50%;background:#1d6ef5;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;color:#fff;flex:none">RT</div>
+        <div style="text-align:left">
+          <div style="font-size:14px;font-weight:700;color:#0b1220">Ryan T.</div>
+          <div style="font-size:12px;color:#7a89a3">Student</div>
+        </div>
+        <div style="margin-left:16px;display:flex;gap:2px;color:#F59E0B;font-size:15px">★★★★★</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROADMAP -->
+  <div style="padding:80px 28px;background:#EEF6FF">
+    <div style="max-width:1180px;margin:0 auto">
+      <div style="max-width:640px">
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:0.16em;color:#1552c7">The process</div>
+        <h2 style="margin:10px 0 0;font-size:38px;font-weight:900;letter-spacing:-0.035em;line-height:1.1;color:#0b1220">Seven steps. None of them are &ldquo;build a brand first.&rdquo;</h2>
+        <p style="margin:16px 0 0;font-size:16px;line-height:1.6;color:#4a5a75">A simple, repeatable process to go from idea to your first sale.</p>
+      </div>
+      <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px">
+        <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:22px">
+          <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;color:#1d6ef5">01 · Find</div>
+          <div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.25;color:#0b1220">Find a problem you can already help with</div>
+          <div style="font-size:13.5px;color:#4a5a75;line-height:1.55;margin-top:10px">Skip the hunt for a secret niche. Start with something you can explain to one person.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:22px">
+          <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;color:#1d6ef5">02 · Choose</div>
+          <div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.25;color:#0b1220">Choose one simple product type</div>
+          <div style="font-size:13.5px;color:#4a5a75;line-height:1.55;margin-top:10px">A short guide, a checklist, a template, or a prompt pack. One format. Small enough to finish.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:22px">
+          <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;color:#1d6ef5">03 · Offer</div>
+          <div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.25;color:#0b1220">Write a one-sentence offer</div>
+          <div style="font-size:13.5px;color:#4a5a75;line-height:1.55;margin-top:10px">Who it&rsquo;s for, what they get, and what it helps them do. If you can&rsquo;t say it in one line, it&rsquo;s still too big.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:22px">
+          <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;color:#1d6ef5">04 · Build</div>
+          <div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.25;color:#0b1220">Make a first version you can finish</div>
+          <div style="font-size:13.5px;color:#4a5a75;line-height:1.55;margin-top:10px">Useful beats polished. Use free tools. Ship a version you would be willing to sell this week.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:22px">
+          <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;color:#1d6ef5">05 · Price</div>
+          <div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.25;color:#0b1220">Set a small, honest price</div>
+          <div style="font-size:13.5px;color:#4a5a75;line-height:1.55;margin-top:10px">The point is a real checkout, not a perfect offer. A small price makes the first attempt easier to make.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:22px">
+          <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;color:#1d6ef5">06 · Launch</div>
+          <div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.25;color:#0b1220">Put it in front of people</div>
+          <div style="font-size:13.5px;color:#4a5a75;line-height:1.55;margin-top:10px">A link, a post, a few conversations. You are collecting a first-sale attempt, not building a company overnight.</div>
+        </div>
+        <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:22px;grid-column:1/-1;max-width:530px">
+          <div style="font-size:12px;font-weight:800;letter-spacing:0.1em;color:#1d6ef5">07 · Improve</div>
+          <div style="font-size:17px;font-weight:800;margin-top:6px;line-height:1.25;color:#0b1220">Keep what worked,<br>drop what did not</div>
+          <div style="font-size:13.5px;color:#4a5a75;line-height:1.55;margin-top:10px">Look at what people asked, ignored, or bought. Then make the next version smaller and clearer.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KIT SECTION -->
+  <div id="kit" style="max-width:1180px;margin:0 auto;padding:64px 28px 0;display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);gap:14px;align-items:stretch">
+    <div style="background:#eaf2ff;border:1px solid #d3e3fd;border-radius:16px;padding:30px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,0.78fr);gap:26px">
+      <div>
+        <div style="font-size:11.5px;font-weight:800;letter-spacing:0.16em;color:#1552c7">WHAT YOU GET</div>
+        <h3 style="margin:10px 0 0;font-size:31px;font-weight:900;letter-spacing:-0.03em;color:#0b1220">The <span style="color:#1d6ef5">$5</span> kit</h3>
+        <p style="margin:10px 0 0;font-size:14.5px;line-height:1.5;color:#2b3a52">Short documents you can use, not a 14-hour content dump. Keep them next to you while you make the first version.</p>
+        <div style="margin-top:22px;display:grid;gap:11px;font-size:13.5px;color:#26354d">
+          <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center">✓</span><span><strong>The Guide</strong> — step-by-step written roadmap</span></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center">✓</span><span><strong>Offer Worksheet</strong> — prompts for a clear, sellable offer</span></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center">✓</span><span><strong>Validation Checklist</strong> — test the idea before you overbuild</span></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center">✓</span><span><strong>AI Prompt Pack</strong> — copy-paste prompts for the idea, product listing</span></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center">✓</span><span><strong>Launch Plan</strong> — day-by-day moves for a first-sale attempt</span></div>
+          <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:19px;height:19px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center">✓</span><span><strong>7-Step Roadmap</strong> — one page you can keep next to you</span></div>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:26px">
+          <a href="#kit" style="background:#1d6ef5;color:#fff;font-size:15px;font-weight:700;padding:14px 22px;border-radius:10px;box-shadow:0 8px 20px rgba(29,110,245,0.28)" style-hover="background:#155cd6;color:#fff">Get the $5 Kit →</a>
+          <span style="font-size:13px;color:#61708c">One-time payment. You keep it.</span>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:flex-end;overflow:visible">
+        <img src="./assets/kit-mockup-cut.png" alt="The $5 kit — guide, offer worksheet, launch plan and checklists" style="width:100%;height:auto;display:block;object-fit:contain;border-radius:12px">
+      </div>
+    </div>
+    <div id="course" style="background:#fff;border:1px solid #e6eaf2;border-radius:16px;padding:24px;display:flex;flex-direction:column">
+        <div style="width:36px;height:26px;border-radius:6px;background:#ff0033;display:flex;align-items:center;justify-content:center">
+          <div style="width:0;height:0;border-left:9px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:2px"></div>
+        </div>
+        <div style="font-size:13.5px;color:#61708c;margin-top:14px">Prefer to watch?</div>
+        <div style="font-size:20px;font-weight:800;line-height:1.25;margin-top:3px;color:#0b1220">Free course<br>on YouTube.</div>
+        <p style="margin:12px 0 0;font-size:13.5px;line-height:1.5;color:#61708c">There is a free course on YouTube. Walk through the same seven steps at your own pace. Use it if you want to see the path first.</p>
+        <p style="margin:6px 0 0;font-size:13px;color:#7a89a3">The <strong style="color:#0b1220">Your First $1 Online</strong> kit is the written version — you follow at your own pace, worksheets next to you.</p>
+        <div style="position:relative;margin-top:18px;height:150px">
+          <image-slot id="fdc-video" shape="rounded" radius="10" src="./assets/course-thumbnail.jpg" placeholder="video thumbnail" style="width: 100%; height: 100%"></image-slot>
+          <div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;pointer-events:none;box-shadow:0 4px 20px rgba(0,0,0,0.3)">
+            <div style="width:0;height:0;border-left:13px solid #FF0033;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px"></div>
+          </div>
+        </div>
+        <div style="flex:1;min-height:10px"></div>
+        <a href="https://www.youtube.com/playlist?list=PLRcOv45N0DG8" target="_blank" rel="noopener" style="display:block;text-align:center;border:1px solid #d7e2f5;border-radius:10px;padding:13px;font-size:14.5px;font-weight:700;color:#0b1220;background:#fff;margin-top:14px" style-hover="border-color:#1d6ef5;color:#0b1220">Watch on YouTube <span style="font-size:12px">→</span></a>
+      </div>
+  </div>
+
+  <!-- WHO'S FOR / NOT FOR / PRICING -->
+  <div style="max-width:1180px;margin:0 auto;padding:64px 28px 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px;align-items:stretch">
+    <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:24px">
+      <div style="font-size:17px;font-weight:800;color:#0b1220">This is for you if</div>
+      <div style="margin-top:16px;display:grid;gap:11px;font-size:13.5px;color:#26354d">
+        <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:10.5px;display:flex;align-items:center;justify-content:center">✓</span>You are a beginner and the whole internet feels like too much.</div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:10.5px;display:flex;align-items:center;justify-content:center">✓</span>You have no audience and do not want to wait until you do.</div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#1d6ef5;color:#fff;font-size:10.5px;display:flex;align-items:center;justify-content:center">✓</span>You want something cheap, short, and you can act on this week.</div>
+      </div>
+    </div>
+    <div style="background:#fff;border:1px solid #e6eaf2;border-radius:14px;padding:24px">
+      <div style="font-size:17px;font-weight:800;color:#0b1220">This is not for you if</div>
+      <div style="margin-top:16px;display:grid;gap:11px;font-size:13.5px;color:#26354d">
+        <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#fde8e7;color:#d64b45;font-size:10.5px;font-weight:700;display:flex;align-items:center;justify-content:center">✕</span>Anyone looking for get-rich-quick promises or income guarantees.</div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#fde8e7;color:#d64b45;font-size:10.5px;font-weight:700;display:flex;align-items:center;justify-content:center">✕</span>Anyone who wants a done-for-you business handed to them.</div>
+        <div style="display:flex;gap:10px;align-items:flex-start"><span style="flex:none;width:18px;height:18px;border-radius:50%;background:#fde8e7;color:#d64b45;font-size:10.5px;font-weight:700;display:flex;align-items:center;justify-content:center">✕</span>Anyone who already sells digital products and needs advanced scaling.</div>
+      </div>
+    </div>
+    <div style="background:#0d1522;border-radius:14px;padding:26px;color:#fff;display:flex;flex-direction:column">
+      <div style="font-size:11px;font-weight:800;letter-spacing:0.18em;color:#8fa6c9">ONE-TIME</div>
+      <div style="font-size:23px;font-weight:900;letter-spacing:-0.025em;margin-top:10px;line-height:1.2;color:#fff">Starting shouldn&rsquo;t cost $1,995.</div>
+      <p style="margin:12px 0 0;font-size:13.5px;line-height:1.5;color:#b9c6da">Your First $1 Online is $5, once. You get the kit. You keep it. No subscription, no fake countdown, no &ldquo;only 3 spots left.&rdquo;</p>
+      <div style="flex:1;min-height:14px"></div>
+      <a href="#kit" style="display:block;text-align:center;background:#1d6ef5;color:#fff;font-size:15px;font-weight:700;padding:15px;border-radius:10px" style-hover="background:#155cd6;color:#fff">Get Your First $1 Online →</a>
+    </div>
+  </div>
+
+  <!-- FINAL CTA -->
+  <div style="max-width:720px;margin:0 auto;padding:64px 28px 0;text-align:center;position:relative">
+    <div style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60vw;height:60vw;max-width:700px;max-height:700px;border-radius:50%;background:radial-gradient(circle,#1d6ef5 0%,transparent 70%);opacity:0.08;filter:blur(40px);pointer-events:none" aria-hidden="true"></div>
+    <h3 style="margin:0;font-size:34px;font-weight:900;letter-spacing:-0.03em;color:#0b1220">Five dollars. One first attempt.</h3>
+    <p style="margin:14px 0 0;font-size:15px;line-height:1.6;color:#4a5a75;text-wrap:pretty">If you have been circling this for months, start smaller than the courses told you to. Make one simple product. Try to sell it. Learn from that.</p>
+    <a href="#kit" style="display:inline-block;margin-top:26px;background:#1d6ef5;color:#fff;font-size:16px;font-weight:700;padding:16px 28px;border-radius:11px;box-shadow:0 10px 24px rgba(29,110,245,0.28)" style-hover="background:#155cd6;color:#fff">Get the $5 Kit →</a>
+  </div>
+
+  <footer style="max-width:1180px;margin:0 auto;padding:44px 28px 34px;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:12.5px;color:#8b98af">
+    <div style="font-weight:700;color:#4a5a75">First Dollar Co.</div>
+    <div>A calmer path to your first $1 online.</div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;showComparison&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Sections&quot; },
+  &quot;showFreeCourse&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Sections&quot; },
+  &quot;showSocialProof&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Sections&quot; }
+}">
+class Component extends DCLogic {
+  state = { vw: typeof window !== 'undefined' ? window.innerWidth : 1440 };
+  componentDidMount() {
+    this._onR = () => this.setState({ vw: window.innerWidth });
+    window.addEventListener('resize', this._onR);
+    this._onR();
+  }
+  componentWillUnmount() { window.removeEventListener('resize', this._onR); }
+  renderVals() {
+    const W = this.state.vw;
+    return {
+      heroWide: W >= 768,
+      heroNarrow: W < 768,
+      showComparison: this.props.showComparison ?? true,
+      showFreeCourse: this.props.showFreeCourse ?? true,
+      showSocialProof: this.props.showSocialProof ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>
